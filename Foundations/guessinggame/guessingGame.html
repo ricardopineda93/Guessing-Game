@@ -8,8 +8,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Richie's Guessing Game</title>
+    <meta
+      name="description"
+      content="Just a quick little mock-up of a Guessing 
+		Game using what I know so far about HTML, CSS, and JS."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -20,7 +24,26 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+    <div id="titleHeader">
+      <h1>Richie's Guessing Game</h1>
+    </div>
 
-    <script src="" async defer></script>
+    <div>
+      <h2>Previous Guesses</h2>
+      <ul id="guessList"></ul>
+    </div>
+
+    <div id="guessesLeft">
+      5 guess(es) remaining!
+    </div>
+    <br />
+    <div id="userInputs">
+      <input type="text" placeholder="Enter Guess Here" id="guessTextInput" />
+      <input type="submit" name="" id="submitGuessButton" />
+      <input type="button" value="Play Again" id="playAgainButton" />
+      <input type="button" value="Hint" id="hintButton" />
+    </div>
+
+    <script src="guessingGameScripts.js" async defer></script>
   </body>
 </html>
